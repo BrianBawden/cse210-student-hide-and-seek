@@ -32,3 +32,5 @@ root                    (project root folder)
 
 ## Authors
 * 
+Brian Bawden
+brianbawden001@gmail.com
