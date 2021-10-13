@@ -43,3 +43,6 @@ class Console:
             text (string): The text to display.
         """
         print(text)
+
+    def keep_playing(self, prompt):
+        pass

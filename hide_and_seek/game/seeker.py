@@ -19,8 +19,9 @@ class Seeker:
         Args:
             self (Seeker): An instance of Seeker.
         """
-        self.location = random.randint(1, 1000)
+        self.location = random.randint(1, 1000) #logical test:5
         self.distance = [0, 0] # start with two so get_message always works
+        # logical test: 895
     
     def get_message(self):
         """Gets a message from the seeker.
@@ -47,5 +48,5 @@ class Seeker:
             self (Seeker): An instance of Seeker.
         """
         distance = abs(self.location - location)
-        self.distance.append(distance)
-        self.location = location
+        self.distance.append(distance) 
+        self.location = location 
