@@ -47,8 +47,8 @@ class Director:
         """
         message = self.seeker.get_message()
         self.console.write(message)
-        location = self.console.read_number("Enter a location [1-1000]: ")
-        self.seeker.move(location)
+        location = self.console.read_number("Enter a location [1-1000]: ") # logical test: 5
+        self.seeker.move(location) # logical test: location = 5
         
     def do_updates(self):
         """Updates the important game information for each round of play. In 
@@ -69,3 +69,7 @@ class Director:
         hint = self.hider.get_hint()
         self.console.write(hint)
         self.keep_playing = (self.hider.distance[-1] != 0)
+
+    def continue_play(self):
+
+        keep_playing = self.console.keep_playing("Do you want to keep playing? (y/n)")
