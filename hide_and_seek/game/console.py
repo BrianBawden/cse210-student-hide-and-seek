@@ -45,4 +45,4 @@ class Console:
         print(text)
 
     def keep_playing(self, prompt):
-        
+        pass

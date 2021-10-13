@@ -47,8 +47,8 @@ class Director:
         """
         message = self.seeker.get_message()
         self.console.write(message)
-        location = self.console.read_number("Enter a location [1-1000]: ") # logical test: 5
-        self.seeker.move(location) # logical test: location = 5
+        location = self.console.read_number("Enter a location [1-1000]: ")
+        self.seeker.move(location) 
         
     def do_updates(self):
         """Updates the important game information for each round of play. In 

@@ -47,6 +47,6 @@ class Seeker:
         Args:
             self (Seeker): An instance of Seeker.
         """
-        distance = abs(self.location - location)# logical test: self.location = 900 - location = 5  distance = 895
-        self.distance.append(distance) # logical test: self.distance = 895
-        self.location = location # self.location= 5
+        distance = abs(self.location - location)
+        self.distance.append(distance) 
+        self.location = location 
